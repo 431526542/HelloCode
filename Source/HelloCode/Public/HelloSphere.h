@@ -28,4 +28,10 @@ public:
 protected:
 	class UTextRenderComponent* TextRenderComponent;
 
+//델리게이트와 이벤트 선언 방법
+	UFUNCTION()         //오버랩 수행
+	void MyOnBegineOverlap(AActor* OverlappedActor, AActor* OtherActor);
+	UFUNCTION()         //오버랩 종료
+	void MyOnEndOverlap(AActor* OverlappedActor, AActor* OtherActor);
+
 };
